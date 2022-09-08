@@ -110,7 +110,7 @@ Swiper,
       SwiperSlide
   },
   data: () => ({
-    backgroundUrl: require("@/assets/imgs/film.png"),
+    backgroundUrl: require("@/assets/imgs/film.PNG"),
     swiperOption: {
           slidesPerView: 3,
           spaceBetween: 30,
