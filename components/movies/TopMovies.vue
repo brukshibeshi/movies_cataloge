@@ -1,6 +1,6 @@
 <template>
-  <v-card class="mx-auto" max-width="344">
-    <v-img :src="topMovie.src" height="450px"></v-img>
+  <v-card class="mx-auto" width="200px !importanrt;">
+  <v-img :src="topMovie.src" height="500px" width="300px;"></v-img>
   </v-card>
 </template>
 <script>

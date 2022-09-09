@@ -72,13 +72,20 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
-      }
-    }
+          success: colors.green.accent3,
+          background: "#13171c",
+        },
+      },
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: 
+    {
+      buildModules: [
+        '@nuxtjs/color-mode'
+      ]
+    }
+  
 }
+

@@ -45,26 +45,28 @@
     <v-container fluid class="w-lastwatch">
       <v-row>
         <v-col cols="12">
-          <h1>my last watch</h1>
+          <h1>My last watch</h1>
         </v-col>
-       <swiper class="swiper" :options="swiperOption" >
-          <swiper-slide style="width: 250px !important; margin: 0px" v-for="(lastWatch, idx) in card" :key="idx"
-            ><LastWatch :movie="lastWatch" />
-          </swiper-slide>
-        </swiper>
+        <v-col
+          cols="12"
+          sm="6"
+          :md="idx>0?'4':'8'"
+          v-for="(LastWatch, idx) in card"
+          :key="idx"
+        >
+          <LastWatch :movie="LastWatch" />
+        </v-col>
       </v-row>
     </v-container>
     <v-container fluid class="w-TopMovies">
       <v-row>
         <v-col cols="12">
-          <h1>top movies</h1>
+          <h1>Top movies</h1>
         </v-col>
         <v-col
           cols="12"
           sm="6"
-          md="4"
-          lg="3"
-          xl="2"
+          :md="idx>0?'4':'8'"
           v-for="(topmovies, idx) in top"
           :key="idx"
         >
@@ -75,14 +77,12 @@
     <v-container fluid class="w-TopTv">
       <v-row>
         <v-col cols="12">
-          <h1>top tv shows</h1>
+          <h1>Top Tv shows</h1>
         </v-col>
         <v-col
           cols="12"
           sm="6"
-          md="4"
-          lg="3"
-          xl="2"
+          :md="idx>0?'4':'8'"
           v-for="(toptv, idx) in tv"
           :key="idx"
         >
@@ -93,9 +93,6 @@
   </div>
 </template>
 <script>
-import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-  import 'swiper/css/swiper.css'
-
 import TopTv from "@/components/movies/TopTv";
 import TopMovies from "@/components/movies/TopMovies";
 import LastWatch from "@/components/movies/LastWatch";
@@ -106,19 +103,17 @@ export default {
     LastWatch,
     TopMovies,
     TopTv,
-Swiper,
-      SwiperSlide
   },
   data: () => ({
     backgroundUrl: require("@/assets/imgs/film.PNG"),
     swiperOption: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          }
-        },
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
     trailers: [
       { img: require("@/assets/imgs/mo1.PNG"), index: "01" },
       { img: require("@/assets/imgs/mo2.PNG"), index: "02" },
@@ -127,17 +122,14 @@ Swiper,
     ],
     card: [
       {
-        title: "Pre-fab homes",
         src:
-          "https://imgc.allpostersimages.com/img/posters/top-gun-wingman_u-L-FA8JLN0.jpg",
-        flex: 12,
+          "https://i.pinimg.com/736x/e3/7e/aa/e37eaaf7ad6d8c992762e4e4c0e98c4e.jpg",
       },
 
       {
-        title: "Favorite road trips",
         src:
           "https://www.filmjabber.com/movie-poster-thumbs/bullet-train-movie-poster-6974.jpg",
-        flex: 6,
+
       },
       {
         title: "Best airlines",
@@ -145,33 +137,20 @@ Swiper,
           "https://vibepulp.com/wp-content/uploads/2022/05/The-Gray-Man-Movie-2022-Netflix-Cast-Roles-Trailer-Story-Release-Date-Poster-819x1024.jpg",
         flex: 6,
       },
-          {
+      {
         title: "Favorite road trips",
         src:
           "https://imgc.allpostersimages.com/img/posters/disney-hocus-pocus-moon_u-L-FA8O530.jpg",
         flex: 6,
       },
       {
-        title: "Best airlines",
+
+       title: "Best airlines",
         src:
           "https://vibepulp.com/wp-content/uploads/2022/05/The-Gray-Man-Movie-2022-Netflix-Cast-Roles-Trailer-Story-Release-Date-Poster-819x1024.jpg",
         flex: 6,
       },
-      {
-        title: "Best airlines",
-        src: "https://wallpapercave.com/wp/wp10941904.jpg",
-        flex: 6,
-      },
-      {
-        title: "Best airlines",
-        src: "https://imgc.allpostersimages.com/img/posters/the-wolf-man-illustration_u-L-FA8L0P0.jpg",
-        flex: 6,
-      },
-      {
-        title: "Best airlines",
-        src: "https://imgc.allpostersimages.com/img/posters/marvel-cinematic-universe-doctor-strange-portal_u-L-FA8JLM0.jpg",
-        flex: 6,
-      },
+
     ],
     top: [
       {
@@ -198,6 +177,11 @@ Swiper,
         src: "https://i.pinimg.com/564x/0d/c1/03/0dc1036dc57409d7a5e6809c3f64517c.jpg",
         flex: 6,
       },
+            {
+        title: "Best airlines",
+        src: "https://i.pinimg.com/564x/0d/c1/03/0dc1036dc57409d7a5e6809c3f64517c.jpg",
+        flex: 6,
+      },
     ],
     tv: [
       {
@@ -217,10 +201,16 @@ Swiper,
           "https://imgc.allpostersimages.com/img/posters/back-to-the-future-1985-directed-by-robert-zemeckis_u-L-Q1H92310.jpg",
         flex: 6,
       },
-            {
+      {
         title: "Best airlines",
         src:
           "https://imgc.allpostersimages.com/img/posters/marvel-thor-love-and-thunder-thor-one-sheet_u-L-FA8JWX0.jpg",
+        flex: 6,
+      },
+            {
+        title: "Best airlines",
+        src:
+          "https://cdn.cinematerial.com/p/297x/xfcznadk/hot-seat-south-african-movie-poster-md.jpg?v=1655775650",
         flex: 6,
       },
     ],
@@ -244,12 +234,12 @@ Swiper,
 
 .w-trailers {
   position: relative;
-  bottom: 200px;
-  z-index: 2;
+  bottom: 300px;
+  z-index: 32;
 }
 .w-lastwatch {
   position: relative;
-  bottom: 200px;
+  bottom: 250px;
   z-index: 2;
 }
 .w-TopMovies {

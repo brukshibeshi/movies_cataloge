@@ -1,6 +1,6 @@
 <template>
-  <v-card class="mx-auto" max-width="344">
-    <v-img :src="tvsh.src" height="400px"></v-img>
+  <v-card class="mx-auto" width="200px !importanrt;">
+    <v-img :src="tvsh.src" height="500px"></v-img>
   </v-card>
 </template>
 <script>

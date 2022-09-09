@@ -1,6 +1,6 @@
 <template>
   <v-card class="mx-auto" width="200px !importanrt;">
-    <v-img :src="movie.src" height="450px" width="210px !importanrt;"></v-img>
+    <v-img :src="movie.src" height="500px" width="210px !importanrt;"></v-img>
   </v-card>
 </template>
 <script>
