@@ -16,13 +16,7 @@ export default {
 };
 </script>
 <style scoped>
-.v-application {
-  background-color: #00a86b;
-}
-.theme--dark.v-application {
-  background-color: var(--v-background-base, #121212) !important;
-}
-.theme--light.v-application {
-  background-color: var(--v-background-base, white) !important;
+body {
+  background: #1e1e1e !important;
 }
 </style>

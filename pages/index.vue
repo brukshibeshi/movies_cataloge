@@ -2,9 +2,9 @@
   <div>
     <v-img class="w-promopage" :src="backgroundUrl">
       <v-container fluid fill-height>
-        <v-row>
+        <v-row align-md="7">
           <v-col cols="7">
-            <h2>The legend of the sun rise</h2>
+            <h1 color="white">The legend of the sun rise</h1>
           </v-col>
           <v-col cols="7">
             <p>
@@ -14,10 +14,7 @@
                 text ever since the 1500s, when an unknown printer took a galley of type
                 and scrambled it to make a type specimen book. It has survived not only
                 five centuries, but also the leap into electronic typesetting, remaining
-                essentially unchanged. It was popularised in the 1960s with the release of
-                Letraset sheets containing Lorem Ipsum passages, and more recently with
-                desktop publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.</strong
+                essentially unchanged. .</strong
               >
             </p>
           </v-col>
@@ -105,7 +102,7 @@ export default {
     TopTv,
   },
   data: () => ({
-    backgroundUrl: require("@/assets/imgs/film.PNG"),
+    backgroundUrl: require("@/assets/imgs/film.jpg"),
     swiperOption: {
       slidesPerView: 3,
       spaceBetween: 30,
@@ -115,15 +112,15 @@ export default {
       },
     },
     trailers: [
-      { img: require("@/assets/imgs/mo1.PNG"), index: "01" },
-      { img: require("@/assets/imgs/mo2.PNG"), index: "02" },
-      { img: require("@/assets/imgs/mo3.PNG"), index: "03" },
-      { img: require("@/assets/imgs/mo4.PNG"), index: "04" },
+      { img: require("@/assets/imgs/mo10.PNG"), index: "01" },
+      { img: require("@/assets/imgs/mo7.PNG"), index: "02" },
+      { img: require("@/assets/imgs/mo9.PNG"), index: "03" },
+      { img: require("@/assets/imgs/mo11.PNG"), index: "04" },
     ],
     card: [
       {
-        src:
-          "https://i.pinimg.com/736x/e3/7e/aa/e37eaaf7ad6d8c992762e4e4c0e98c4e.jpg",
+        src:"https://c4.wallpaperflare.com/wallpaper/221/116/854/joaquin-phoenix-joker-batman-fire-car-hd-wallpaper-thumb.jpg"
+          ,
       },
 
       {
@@ -156,7 +153,7 @@ export default {
       {
         title: "Pre-fab homes",
         src:
-          "https://imgc.allpostersimages.com/img/posters/the-goonies-one-sheet-premium-poster_u-L-F9PHF30.jpg",
+          "https://c4.wallpaperflare.com/wallpaper/273/935/829/spider-man-homecoming-2017-marvel-cinematic-universe-movies-spider-man-wallpaper-thumb.jpg",
         flex: 12,
       },
 
@@ -186,7 +183,7 @@ export default {
     tv: [
       {
         title: "Pre-fab homes",
-        src: "https://i.pinimg.com/736x/e3/7e/aa/e37eaaf7ad6d8c992762e4e4c0e98c4e.jpg",
+        src: "https://cdn.shopify.com/s/files/1/1416/8662/products/lion_king_2019_advance_original_film_art_5000x.jpg?v=1647026134",
         flex: 12,
       },
 
@@ -229,12 +226,13 @@ export default {
 }
 
 .w-promopage p {
-  color: black;
+  color: rgb(231, 220, 220);
+   position: left;
 }
 
 .w-trailers {
   position: relative;
-  bottom: 300px;
+  bottom: 250px;
   z-index: 32;
 }
 .w-lastwatch {

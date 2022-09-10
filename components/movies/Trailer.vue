@@ -1,14 +1,14 @@
 <template>
-  <v-card class="mx-auto my-12" max-width="374">
+  <v-card class="mx-auto my-10" max-width="400">
     <template slot="progress">
       <v-progress-linear
         color="deep-purple"
-        height="15"
+        height="5"
         indeterminate
       ></v-progress-linear>
     </template>
 
-    <v-img height="200" :src="trailer.img">
+    <v-img height="150" :src="trailer.img">
       <v-card-title class="text--white" v-text="trailer.index"></v-card-title
     ></v-img>
   </v-card>
