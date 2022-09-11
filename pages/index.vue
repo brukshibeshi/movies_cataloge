@@ -2,9 +2,9 @@
   <div>
     <v-img class="w-promopage" :src="backgroundUrl">
       <v-container fluid fill-height>
-        <v-row align-md="7">
+        <v-row>
           <v-col cols="7">
-            <h1 color="white">The legend of the sun rise</h1>
+            <h1>The legend of the sun rise</h1>
           </v-col>
           <v-col cols="7">
             <p>
@@ -47,7 +47,7 @@
         <v-col
           cols="12"
           sm="6"
-          :md="idx>0?'4':'8'"
+          :md="idx > 0 ? '4' : '8'"
           v-for="(LastWatch, idx) in card"
           :key="idx"
         >
@@ -63,7 +63,7 @@
         <v-col
           cols="12"
           sm="6"
-          :md="idx>0?'4':'8'"
+          :md="idx > 0 ? '4' : '8'"
           v-for="(topmovies, idx) in top"
           :key="idx"
         >
@@ -79,7 +79,7 @@
         <v-col
           cols="12"
           sm="6"
-          :md="idx>0?'4':'8'"
+          :md="idx > 0 ? '4' : '8'"
           v-for="(toptv, idx) in tv"
           :key="idx"
         >
@@ -118,15 +118,14 @@ export default {
       { img: require("@/assets/imgs/mo11.PNG"), index: "04" },
     ],
     card: [
-      {
-        src:"https://c4.wallpaperflare.com/wallpaper/221/116/854/joaquin-phoenix-joker-batman-fire-car-hd-wallpaper-thumb.jpg"
-          ,
+      {title: 'Pre-fab homes',
+        src:
+          "https://c4.wallpaperflare.com/wallpaper/221/116/854/joaquin-phoenix-joker-batman-fire-car-hd-wallpaper-thumb.jpg",
       },
 
       {
         src:
           "https://www.filmjabber.com/movie-poster-thumbs/bullet-train-movie-poster-6974.jpg",
-
       },
       {
         title: "Best airlines",
@@ -141,13 +140,11 @@ export default {
         flex: 6,
       },
       {
-
-       title: "Best airlines",
+        title: "Best airlines",
         src:
           "https://vibepulp.com/wp-content/uploads/2022/05/The-Gray-Man-Movie-2022-Netflix-Cast-Roles-Trailer-Story-Release-Date-Poster-819x1024.jpg",
         flex: 6,
       },
-
     ],
     top: [
       {
@@ -174,7 +171,7 @@ export default {
         src: "https://i.pinimg.com/564x/0d/c1/03/0dc1036dc57409d7a5e6809c3f64517c.jpg",
         flex: 6,
       },
-            {
+      {
         title: "Best airlines",
         src: "https://i.pinimg.com/564x/0d/c1/03/0dc1036dc57409d7a5e6809c3f64517c.jpg",
         flex: 6,
@@ -183,7 +180,8 @@ export default {
     tv: [
       {
         title: "Pre-fab homes",
-        src: "https://cdn.shopify.com/s/files/1/1416/8662/products/lion_king_2019_advance_original_film_art_5000x.jpg?v=1647026134",
+        src:
+          "https://cdn.shopify.com/s/files/1/1416/8662/products/lion_king_2019_advance_original_film_art_5000x.jpg?v=1647026134",
         flex: 12,
       },
 
@@ -204,7 +202,7 @@ export default {
           "https://imgc.allpostersimages.com/img/posters/marvel-thor-love-and-thunder-thor-one-sheet_u-L-FA8JWX0.jpg",
         flex: 6,
       },
-            {
+      {
         title: "Best airlines",
         src:
           "https://cdn.cinematerial.com/p/297x/xfcznadk/hot-seat-south-african-movie-poster-md.jpg?v=1655775650",
@@ -226,28 +224,54 @@ export default {
 }
 
 .w-promopage p {
-  color: rgb(231, 220, 220);
-   position: left;
+  color: rgb(253, 245, 245);
+  position: left;
+  border: 50px;
+}
+.w-promopage h1{
+   color: rgb(253, 245, 245);
+  position: left; 
 }
 
 .w-trailers {
   position: relative;
-  bottom: 250px;
-  z-index: 32;
+  bottom: 350px;
+  border: 50px solid transparent;
+  padding: 30px;
+  z-index: 100;
 }
 .w-lastwatch {
   position: relative;
-  bottom: 250px;
+  background-color: #0d0c22;
+  bottom: 400px;
+  border: 50px solid transparent;
+  padding: 30px;
   z-index: 2;
+}
+.w-lastwatch h1{
+  color: rgb(253, 245, 245);
 }
 .w-TopMovies {
   position: relative;
-  bottom: 200px;
+  background-color: #0d0c22;
+    bottom: 400px;
+  border: 50px solid transparent;
+  padding: 30px;
   z-index: 2;
+}
+.w-TopMovies h1{
+color: rgb(253, 245, 245);
 }
 .w-TopTv {
   position: relative;
-  bottom: 200px;
+  background-color: #0d0c22;
+      bottom: 450px;
+  border: 50px solid transparent;
+  padding: 25px;
   z-index: 2;
 }
+.w-TopTv h1{
+  color: rgb(253, 245, 245);
+}
+
 </style>

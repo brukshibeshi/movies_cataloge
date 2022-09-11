@@ -1,6 +1,16 @@
 <template>
   <v-card class="mx-auto" width="200px !importanrt;">
-    <v-img :src="movie.src" height="500px" width="210px !importanrt;"></v-img>
+    <v-img
+      :src="movie.src"
+      :lazy-src="movie.src"
+      height="500px"
+      width="210px !importanrt;"
+    >
+      <template v-slot:placeholder>
+        <v-row class="fill-height ma-0" align="center" justify="center">
+          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+        </v-row> </template
+    ></v-img>
   </v-card>
 </template>
 <script>
