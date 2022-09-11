@@ -85,4 +85,7 @@ export default {
   margin-left: 10px;
   margin-right: 10px;
 }
+.w-logo{
+  background: rgba(51, 79, 108, 0.973);
+}
 </style>
