@@ -254,7 +254,7 @@ export default {
 .w-TopMovies {
   position: relative;
   background-color: #0d0c22;
-    bottom: 400px;
+    bottom: 450px;
   border: 50px solid transparent;
   padding: 30px;
   z-index: 2;
