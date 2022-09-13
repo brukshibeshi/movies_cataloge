@@ -3,16 +3,15 @@
     <v-img class="w-promopage" :src="backgroundUrl">
       <v-container fluid fill-height>
         <v-row>
-          <v-col cols="7">
-            <h1>The legend of the sun rise</h1>
-          </v-col>
-          <v-col cols="7">
+          <v-col cols="7"> </v-col>
+          <v-col cols="5">
             <p>
               <strong>
-                What is Lorem Ipsum? Lorem Ipsum is simply dummy text of 
-                the printing andtypesetting industry. Lorem Ipsum has been 
-                the industry's standard dummytext ever since the 1500s, </strong
-              >
+            <h1>The legend of sun rise</h1>
+                What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+                andtypesetting industry. Lorem Ipsum has been the industry's standard
+                dummytext ever since the 1500s,
+              </strong>
             </p>
           </v-col>
         </v-row>
@@ -109,7 +108,7 @@ export default {
       },
     },
     trailers: [
-      { img: require("@/assets/imgs/mo10.PNG"),index:"01" },
+      { img: require("@/assets/imgs/mo10.PNG"), index: "01" },
       { img: require("@/assets/imgs/mo7.PNG"), index: "02" },
       { img: require("@/assets/imgs/mo9.PNG"), index: "03" },
       { img: require("@/assets/imgs/mo11.PNG"), index: "04" },
@@ -197,13 +196,18 @@ export default {
 
 .w-promopage p {
   color: rgb(253, 245, 245);
-  position: left;
-  border: 50px;
+  padding: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
 }
 .w-promopage h1 {
   color: rgb(253, 245, 245);
-  position: left;
+  padding: 50px;
+  bottom: 0px;
+  font-size: 50px;
 
+  
 }
 
 .w-trailers {
@@ -217,11 +221,10 @@ export default {
   color: rgb(253, 245, 245);
 }
 .w-trailersidx {
-  position:bottom ;
+  position: bottom;
 }
 .w-lastwatch {
   position: relative;
-  background-color: #111113;
   bottom: 400px;
   border: 50px solid transparent;
   padding: 30px;
@@ -233,7 +236,6 @@ export default {
 }
 .w-TopMovies {
   position: relative;
-  background-color: #111113;
   bottom: 450px;
   border: 50px solid transparent;
   padding: 30px;
@@ -244,7 +246,6 @@ export default {
 }
 .w-TopTv {
   position: relative;
-  background-color: #111113;
   bottom: 450px;
   border: 50px solid transparent;
   padding: 25px;

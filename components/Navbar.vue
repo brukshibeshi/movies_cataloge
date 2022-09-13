@@ -81,9 +81,13 @@ export default {
 </script>
 
 <style>
+.w-menu-item menu.name{
+  color:aliceblue;
+}
 .w-menu-item {
   margin-left: 10px;
   margin-right: 10px;
+  color: aliceblue;
 }
 .w-logo{
   background: rgba(51, 79, 108, 0.973);

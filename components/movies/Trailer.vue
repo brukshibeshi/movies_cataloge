@@ -9,7 +9,7 @@
     </template>
 
     <v-img height="150" :src="trailer.img">
-      <v-card-title class="text--white" v-text="trailer.index"></v-card-title
+      <v-card-title class="text--white num" v-text="trailer.index"></v-card-title
     ></v-img>
   </v-card>
 </template>
@@ -27,3 +27,4 @@ export default {
   methods: {},
 };
 </script>
+

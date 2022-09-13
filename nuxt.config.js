@@ -80,12 +80,18 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: 
-    {
-      buildModules: [
-        '@nuxtjs/color-mode'
-      ]
+  build:
+  {
+    buildModules: [
+      '@nuxtjs/color-mode',
+        '@nuxtjs/google-fonts'
+    ],
+    googleFonts: {
+      families: {
+        Iner: [300, 500, 700]
+      }
     }
-  
+  }
+
 }
 

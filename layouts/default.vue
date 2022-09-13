@@ -1,10 +1,12 @@
 <template>
+<v-app dark>
   <div>
     <navbar />
     <v-main>
       <nuxt />
     </v-main>
   </div>
+  </v-app>
 </template>
 
 <script>
